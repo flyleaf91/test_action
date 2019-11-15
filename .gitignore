@@ -1,0 +1,7 @@
+*.o
+/hello_c/hello.i
+/hello_c/*.s
+/hello_crosscompile/hello
+/11.6-filesystems/app
+build_x86
+build_arm
