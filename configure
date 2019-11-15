@@ -1,2 +1,3 @@
+echo configue
 # export ARCH=arm
 # sudo apt install gcc-arm-linux-gnueabihf
