@@ -48,7 +48,7 @@ $(BUILD_DIR)/%.o: $(SRC_DIR)/%.c $(DEPS)
 	$(CC) -c -o $@ $< $(CFLAGS)
 
 #伪目标
-.PHONY: clean cleanall
+.PHONY: clean cleanall check distcheck
 #按架构删除
 clean:
 		rm -rf $(BUILD_DIR)
@@ -56,5 +56,12 @@ clean:
 #全部删除
 cleanall:
 		rm -rf build_x86 build_arm
+    
+check:
+		./build_x86/$(TARGET)
+
+distcheck:
+		@echo "todo"
+
 
 
